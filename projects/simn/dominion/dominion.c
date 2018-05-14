@@ -672,7 +672,6 @@ int refactorAdventurer(int drawntreasure, struct gameState *state, int currentPl
       }
       return 0;
       
-
 }
 
 //i, currentPlayer, state, handPos
@@ -757,7 +756,7 @@ int refactorGreathall(int currentPlayer, struct gameState *state, int handPos){
       
       //+1 Actions
       state->numActions++;
-      state->numActions++; //(**BUG)
+      //state->numActions++; //(**BUG)
       
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
